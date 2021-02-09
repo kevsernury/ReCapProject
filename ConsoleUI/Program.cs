@@ -16,7 +16,16 @@ namespace ConsoleUI
                 Console.WriteLine(item.Description);
             }
 
-            carManager.Add(new Entities.Concrete.Car {Id = 10, BrandId= 3, ColorId = 15, DailyPrice = 500, Description = "bişey", ModelYeaer = 1990 });
+
+            Console.WriteLine("\nEklemeden sonra");
+            carManager.Add(new Entities.Concrete.Car {Id = 10, BrandId= 3, ColorId = 15, DailyPrice = 500, Description = "Tesla", ModelYeaer = 1990 });
+            foreach (var item in carManager.GetAll())
+            {
+                Console.WriteLine(item.Description);
+            }
+
+            Console.WriteLine("\nSildikten sonra");
+            carManager.Delete(new Entities.Concrete.Car { Id = 1 });
             foreach (var item in carManager.GetAll())
             {
                 Console.WriteLine(item.Description);
