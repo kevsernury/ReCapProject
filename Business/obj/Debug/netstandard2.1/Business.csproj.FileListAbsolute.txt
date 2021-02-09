@@ -1,0 +1,14 @@
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\Business.deps.json
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\Business.dll
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\Business.pdb
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.csprojAssemblyReference.cache
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.AssemblyInfoInputs.cache
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.AssemblyInfo.cs
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.csproj.CoreCompileInputs.cache
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.dll
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.pdb
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\DataAccess.dll
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\Entities.dll
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\DataAccess.pdb
+D:\git\ReCapProject\ReCapProject\Business\bin\Debug\netstandard2.1\Entities.pdb
+D:\git\ReCapProject\ReCapProject\Business\obj\Debug\netstandard2.1\Business.csproj.CopyComplete
