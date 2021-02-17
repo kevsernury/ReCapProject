@@ -10,3 +10,5 @@ D:\git\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.1\DataAccess.
 D:\git\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.1\Entities.dll
 D:\git\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.1\Entities.pdb
 D:\git\ReCapProject\ReCapProject\DataAccess\obj\Debug\netstandard2.1\DataAccess.csproj.CopyComplete
+D:\git\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.1\Core.dll
+D:\git\ReCapProject\ReCapProject\DataAccess\bin\Debug\netstandard2.1\Core.pdb

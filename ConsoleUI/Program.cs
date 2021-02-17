@@ -1,4 +1,5 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -10,66 +11,58 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            /*    CarManager carManager = new CarManager(new InMemoryCarDal());
-                carManager.GetAll(); //Bu bize bir liste döndürecek
+            //BrandManager brandManager = new BrandManager(new EfBrandDal());
+            //brandManager.Add(new Brand {BrandName = "Ford" });
+            //brandManager.Add(new Brand { BrandName = "Wolkswagen" });
+            //brandManager.Add(new Brand { BrandName = "BMW" });
 
-                foreach (var item in carManager.GetAll())
-                {
-                    Console.WriteLine(item.Description);
-                }
+            //ColorManager colorManager = new ColorManager(new EfColorDal());
+            //colorManager.Add(new Color { ColorName = "Black" });
+            //colorManager.Add(new Color { ColorName = "White" });
+            //colorManager.Add(new Color { ColorName = "Red" });
+            //colorManager.Add(new Color { ColorName = "Grey" });
+
+            FindCarById();
 
 
-                Console.WriteLine("\nEklemeden sonra");
-                carManager.Add(new Entities.Concrete.Car {Id = 10, BrandId= 3, ColorId = 15, DailyPrice = 500, Description = "Tesla", ModelYeaer = 1990 });
-                foreach (var item in carManager.GetAll())
-                {
-                    Console.WriteLine(item.Description);
-                }
+            // ListCarsWithBrandAndColor();
 
-                Console.WriteLine("\nSildikten sonra");
-                carManager.Delete(new Entities.Concrete.Car { Id = 1 });
-                foreach (var item in carManager.GetAll())
-                {
-                    Console.WriteLine(item.Description);
-                }
+            //ListCarsWithDescriptionAndPrice();
+        }
 
-                */
-
+        private static void FindCarById()
+        {
             CarManager carManager = new CarManager(new EfCarDal());
-            
+
+            Car car = new Car();
+            car = carManager.GetById(2);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("ID:\t{0}\nName:\t{1}\nYear:\t{2}\nDesc:\t{3}\nPrice:\t{4} TL", car.Id, car.CarName, car.ModelYear, car.Description, car.DailyPrice);
+            Console.WriteLine("----------END----------");
+        }
+
+        private static void ListCarsWithDescriptionAndPrice()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
 
             foreach (var item in carManager.GetAll())
             {
-                Console.WriteLine(item.Description);
+                Console.WriteLine("-----------------------");
+                Console.WriteLine("Name:\t{0}\nDesc:\t{1}\nPrice:\t{2} TL", item.CarName, item.Description, item.DailyPrice);
             }
+            Console.WriteLine("----------END----------");
+        }
 
-            Car newcar = new Car { Id = 10, BrandId = 3, ColorId = 15, DailyPrice = 500, Description = "Tesla", ModelYear = 1990 };
+        private static void ListCarsWithBrandAndColor()
+        {
+            CarManager carManager = new CarManager(new EfCarDal());
 
-
-            carManager.Add(newcar);
-            Console.WriteLine("\nTesla eklendi\n");
-            foreach (var item in carManager.GetAll())
+            foreach (var item in carManager.GetCarDetails())
             {
-                Console.WriteLine(item.Description);
+                Console.WriteLine("-----------------------");
+                Console.WriteLine("Name:\t{0}\nBrand:\t{1}\nColor:\t{2}\nPrice:\t{3} TL", item.CarName, item.BrandName, item.ColorName, item.DailyPrice);
             }
-
-
-
-            carManager.Delete(newcar);
-            Console.WriteLine("\nTesla silindi\n");
-            foreach (var item in carManager.GetAll())
-            {
-                Console.WriteLine(item.Description);
-            }
-
-
-
-            Console.WriteLine("\nyenlış ekleme");
-            carManager.Add(new Car { Id = 10, BrandId = 3, ColorId = 15, DailyPrice = 500, Description = "T", ModelYear = 1990 });
-            foreach (var item in carManager.GetAll())
-            {
-                Console.WriteLine(item.Description);
-            }
+            Console.WriteLine("----------END----------");
         }
     }
 }

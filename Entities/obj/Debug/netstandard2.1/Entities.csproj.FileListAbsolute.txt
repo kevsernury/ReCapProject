@@ -7,3 +7,6 @@ D:\git\ReCapProject\ReCapProject\Entities\obj\Debug\netstandard2.1\Entities.Asse
 D:\git\ReCapProject\ReCapProject\Entities\obj\Debug\netstandard2.1\Entities.csproj.CoreCompileInputs.cache
 D:\git\ReCapProject\ReCapProject\Entities\obj\Debug\netstandard2.1\Entities.dll
 D:\git\ReCapProject\ReCapProject\Entities\obj\Debug\netstandard2.1\Entities.pdb
+D:\git\ReCapProject\ReCapProject\Entities\bin\Debug\netstandard2.1\Core.dll
+D:\git\ReCapProject\ReCapProject\Entities\bin\Debug\netstandard2.1\Core.pdb
+D:\git\ReCapProject\ReCapProject\Entities\obj\Debug\netstandard2.1\Entities.csproj.CopyComplete
