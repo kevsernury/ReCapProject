@@ -27,6 +27,19 @@ namespace ConsoleUI
             // ListCarsWithBrandAndColor();
 
             //ListCarsWithDescriptionAndPrice();
+
+            //UserManager userManager = new UserManager(new EfUserDal());
+            //userManager.Add(new User { FirstName = "Anıl", LastName = "Sensei", Email = "a.sen@m.com", Password = "123" });
+            //userManager.Add(new User { FirstName = "Ahmet", LastName = "Araçlikus", Email = "a.kus@m.com", Password = "asd" });
+            //userManager.Add(new User { FirstName = "Shika", LastName = "Maru", Email = "s.maru@m.com", Password = "qwe" });
+
+            //CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+            //customerManager.Add(new Customer {UserId = 3,CompanyName ="Evden işletme" });
+
+           // IRentalService rentalManager = new RentalManager(new EfRentalDal());
+            //rentalManager.Add(new Rental {CarId = 2, CustomerId = 1, RentDate =new DateTime(2021,1,1), ReturnDate = new DateTime(2021,1,2) });
+            
+            
         }
 
         private static void FindCarById(int i)
