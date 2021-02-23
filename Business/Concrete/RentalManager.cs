@@ -20,8 +20,8 @@ namespace Business.Concrete
         public IResult Add(Rental rental)
         {
            
-                    _rentalDal.Add(rental);
-                    return new SuccessResult(Messages.GeneralAdded);
+            _rentalDal.Add(rental);
+            return new SuccessResult(Messages.GeneralAdded);
            
            
         }

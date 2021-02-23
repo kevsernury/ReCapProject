@@ -36,10 +36,11 @@ namespace ConsoleUI
             //CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
             //customerManager.Add(new Customer {UserId = 3,CompanyName ="Evden işletme" });
 
-           // IRentalService rentalManager = new RentalManager(new EfRentalDal());
+            // IRentalService rentalManager = new RentalManager(new EfRentalDal());
             //rentalManager.Add(new Rental {CarId = 2, CustomerId = 1, RentDate =new DateTime(2021,1,1), ReturnDate = new DateTime(2021,1,2) });
-            
-            
+
+            CarManager carManager = new CarManager(new EfCarDal());
+            carManager.Add(new Car { CarName = "Araba", BrandId = 2, ColorId = 0, DailyPrice = 45, Description = "fdf", ModelYear = 1221});
         }
 
         private static void FindCarById(int i)

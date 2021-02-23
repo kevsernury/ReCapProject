@@ -1,12 +1,12 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Entities.Concrete.DTOs;
-using System;
+using Entities.Concrete.DTOs;      
 using System.Collections.Generic;
-using System.Text;
 
 namespace Business.Concrete
 {
@@ -17,8 +17,7 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-
-       
+          
 
         public IDataResult<List<Car>> GetAll()
         {
@@ -30,27 +29,21 @@ namespace Business.Concrete
             return new SuccessDataResult<Car>(_carDal.Get(p=> p.Id == id), Messages.GeneralListed) ;
         }
 
-    public IDataResult<List<Car>> GetCarsByBrandId(int id)
-    {
+        public IDataResult<List<Car>> GetCarsByBrandId(int id)
+        {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.BrandId == id)) ;
         }
 
         public IDataResult<List<Car>> GetCarsByColorId(int id)
-    {
+        {   
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
         }
 
-        
+        [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
-            if (car.Description.Length >= 2 && car.DailyPrice > 0)
-            {
-                _carDal.Add(car);
-                return new SuccessResult(Messages.GeneralAdded);
-            }
-                
-            else
-                return new ErrorResult(Messages.GeneralNameInvalid);
+            _carDal.Add(car);
+            return new SuccessResult(Messages.GeneralAdded);
         }
 
         public IResult Delete(Car car)

@@ -65,3 +65,8 @@ D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\
 D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
+D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\git\ReCapProject\ReCapProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll

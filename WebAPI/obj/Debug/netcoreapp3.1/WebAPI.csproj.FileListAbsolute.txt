@@ -74,3 +74,8 @@ D:\git\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.Co
 D:\git\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 D:\git\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 D:\git\ReCapProject\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+D:\git\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\git\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\git\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+D:\git\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\git\ReCapProject\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
